@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "auth-in-fastapi-notes"
+version = "0.1.0"
+description = "Authentication and authorization in FastAPI"
+authors = ["AlessandroMiola <alessandro1.miola@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.3.4"
+pytest = "^8.1.1"
+sqlmodel = "^0.0.16"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
