@@ -35,7 +35,7 @@ ruff-format:
   @poetry run ruff format .
 
 ruff-format-check:
-  @echo "🚀 Listing files Black would reformat"
+  @echo "🚀 Listing files Ruff would reformat"
   @poetry run ruff format --check .
 
 lint-and-format: ruff-fix ruff-format

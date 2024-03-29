@@ -5,6 +5,7 @@ Revises:
 Create Date: 2024-03-27 14:56:49.769411
 
 """
+
 from collections.abc import Sequence
 
 import sqlalchemy as sa
@@ -25,7 +26,7 @@ def upgrade() -> None:
         sa.Column("username", sqlmodel.sql.sqltypes.AutoString(), nullable=False),
         sa.Column("hashed_password", sqlmodel.sql.sqltypes.AutoString(), nullable=False),
         sa.PrimaryKeyConstraint("username"),
-        sa.UniqueConstraint("username")
+        sa.UniqueConstraint("username"),
     )
     # ### end Alembic commands ###
 
