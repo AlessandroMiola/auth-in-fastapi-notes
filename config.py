@@ -7,6 +7,7 @@ class Settings(BaseSettings):
     POSTGRES_SERVER: str = "localhost"
     POSTGRES_PORT: int = 5432
     POSTGRES_DB: str
+    NGINX_PORT: int = 443
 
     @property
     def database_url(self) -> str:
